@@ -8,4 +8,10 @@ public class SwordHuntingType extends HuntingType {
 
 	}
 
+	@Override
+	public Weapon createWeapon() {
+		// TODO Auto-generated method stub
+		return new Sword();
+	}
+
 }

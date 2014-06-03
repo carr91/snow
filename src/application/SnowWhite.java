@@ -25,7 +25,8 @@ public class SnowWhite {
 		//final SupremacistTyrant snowWhite = new SupremacistTyrant("Jane Smith", "Snow White");
 		//final SupremacistTyrant pappaBear = new SupremacistTyrant("Jack Jones", "Pappa Bear");
 		
-		//task 2:creation and naming of the tyrant is changed to the following
+		//task 2:creation and naming of the tyrant is changed to the following- Note that the name method can be removed and bundled into the constructor(getInstance)
+		//
 		final SupremacistTyrant snowWhite = SupremacistTyrant.getInstance();
 		snowWhite.name("Jane Smith", "Snow Whittle");
 		
@@ -38,7 +39,7 @@ public class SnowWhite {
 		
 		// create slaves
 		
-		//task 1 - new constructor for humans- no longer uses childs and adults
+		//task 1 - new constructor for humans- no longer uses child and adult
 		final Slave georgie = new Human("George", "Georgie", 1963);
 		final Slave maxine = new Human("Maxine", "Maxie", 2004);
 		

@@ -7,4 +7,10 @@ public class MachineGunHuntingType extends HuntingType {
 		System.out.println("  firing: " + weaponName());
 	}
 
+	@Override
+	public Weapon createWeapon() {
+		// TODO Auto-generated method stub
+		return new MachineGun();
+	}
+
 }

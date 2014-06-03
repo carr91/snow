@@ -8,7 +8,7 @@ public class SupremacistTyrant {
 	private String embellishedName;
 	private Set <Slave>movementSlaves = new HashSet<Slave>();
 
-	//task 2: lazy instantiona used - only creates the turant when it is first created. 
+	//task 2: lazy instantion used - only creates the turant when it is first created. 
 	private static SupremacistTyrant instance = null;
 	
 	protected SupremacistTyrant(){}; //used to stop instantiation
@@ -16,7 +16,7 @@ public class SupremacistTyrant {
 	//new initialization
 	public static SupremacistTyrant getInstance(){
 		if(instance == null) {
-	         instance = new SupremacistTyrant();
+	         instance = new SupremacistTyrant();//note that new SupremacistTyrant(Jane Smith, Snow White); could be used instead of name
 	      }
 		return instance;
 	}
