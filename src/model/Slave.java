@@ -67,4 +67,5 @@ public abstract class Slave implements slavecomponent{
 	public String toString(){
 		return this.getClass() + "; realname: " + realName + ", slaveName: " + slaveName;
 	}
+
 }

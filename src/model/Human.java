@@ -3,12 +3,21 @@ package model;
 import java.util.Random;
 
 
-public abstract class Human extends Slave {
-	
+public class Human extends Slave{
+	AgeRole age;
 	private Random randomGenerator = new Random();
-
+	
 	public Human(String realName, String slaveName, Integer yearOfBirth) {
 		super(realName, slaveName, yearOfBirth);
+		boolean heavyWorkAbility = (yearOfBirth-2014<= 14)?true:false;
+		if (heavyWorkAbility == true) {
+			age = new AdultType();
+		}
+		else {
+
+			age = new ChildType();
+		}
+		
 	}
 
 	@Override
@@ -52,7 +61,12 @@ public abstract class Human extends Slave {
 	public void respondToMovement() {
 		System.out.println("  " + getSlaveName() + ": Behold! The Majesty of Majesties is coming!");
 	}
-	
-	public abstract Boolean isAbleToDoHeavyWork();
+	//task 1 - new functionality to check if slave is able to do heavy work
+	public boolean isAbleToDoHeavyWork() {
+		return age.isAbleToDoHeavyWork();
+	}
+	public String toString () {
+		return age.toString();
+	}
 
 }
