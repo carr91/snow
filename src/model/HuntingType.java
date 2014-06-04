@@ -1,6 +1,6 @@
 package model;
 
-public abstract class HuntingType implements weaponFactory{
+public abstract class HuntingType implements WeaponInterface{
 
 	private Weapon weapon;
 	

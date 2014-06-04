@@ -30,7 +30,7 @@ public abstract class Slave implements slavecomponent{
 	public String getSlaveName(){
 		return slaveName;
 	}
-	//task 5 added composite functions, but they do nothing due to the class being a leaf
+	//task 5 - added composite functions, but they do nothing due to the class being a leaf
 	public void add(slavecomponent SC) {
 	}
 	public void remove(slavecomponent SC) {
